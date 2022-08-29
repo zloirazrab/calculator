@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Poppins&family=Roboto:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 760px;
+  background: linear-gradient(0.35turn, #363636, #18191C, #18191C);
+  box-shadow: rgba(0, 0, 0, 0.85) 5px 5px 15px;
+  border-radius: 30px;
+}
+.calculator .inputField {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  overflow: scroll;
+  height: 210px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 34px;
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+}
+.calculator .keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 10px;
+  align-items: center;
+  height: 510px;
+  padding: 10px;
+  border-radius: 30px;
+  background: linear-gradient(-0.4turn, #194D67, #12314C, #0D2842);
+}
+.calculator .keyboard .keyboardButton {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(10, 30, 46, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 15px;
+  border: none;
+}
+.calculator .keyboard .keyboardButton:first-child {
+  grid-column: 1/span 2; /* span from grid column line 1 to 3 (i.e., span 2 columns) */
+  width: 150px;
+  border-radius: 40px;
+}
+.calculator .keyboard .keyboardButton:last-child {
+  grid-column: 2/span 3; /* span from grid column line 1 to 3 (i.e., span 2 columns) */
+}
+.calculator .keyboard .equalsButton {
+  width: 240px;
+  border-radius: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */
